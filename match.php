@@ -7,7 +7,8 @@ $matches = array(
     '@$_GET[\'pw\']',
     '@$_REQUEST[\'body\']',
     '$_POST[\'g__g_\']',
-    '@preg_replace("/[checksql]/e",$_POST[\'date\'],"saft");'
+    '@preg_replace("/[checksql]/e",$_POST[\'date\'],"saft");',
+    '$func="cr"."eat"."e_fun"."cti"'
 );
 
 $fileName = $argv[1];
