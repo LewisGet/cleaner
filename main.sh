@@ -13,8 +13,20 @@ do
         echo \n
     done
 
+    # 圖片跟記錄檔內不該有 php 檔案
+    find /var/www/*/{images,logs} -name "*.php"  $1 | while read x
+    do
+        echo $x
+
+        mkdir -p /var/hacker$x
+        mv $x  /var/hacker$x
+
+        echo \n
+    done
+
+
     # 找網圖片暫存與記錄資料夾
-    find /var/www/*/{images,logs,tmp} -name "*.php"  $1 | while read x
+    find /var/www/*/tmp -name "*.php"  $1 | while read x
 
     do
         echo $x
