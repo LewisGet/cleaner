@@ -8,7 +8,16 @@ $matches = array(
     '@$_REQUEST[\'body\']',
     '$_POST[\'g__g_\']',
     '@preg_replace("/[checksql]/e",$_POST[\'date\'],"saft");',
-    '$func="cr"."eat"."e_fun"."cti"'
+    '$func="cr"."eat"."e_fun"."cti"',
+    // joomla allow to use
+    '$_GET',
+    '$_POST',
+    '$_REQUEST',
+    '$_FILES',
+    'header  (',
+    'header (',
+    'header(',
+    'header'
 );
 
 $fileName = $argv[1];
